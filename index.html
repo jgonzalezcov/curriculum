@@ -1,0 +1,374 @@
+<!-- 
+PUNTOS DESAFIO 1: 
+    PUNTOS A EVALUAR:
+        1) Estructura base: REALIZADO
+        2) Títulos y Párrafos: REALIZADO; NOTA: TITULOS DE SECCION Y PARRAFOS DE DESCRIPCION DE PERFIL
+        3) Enlances: REALIZADO; NOTA:Enlaces a redes sociales y empresas en que se trabajo       
+        4) Imágenes: REALIZADO; NOTA:Imagen local es la de perfil, y su texto alternativo es "Foto perfil"
+        5) Listas: 
+                a)OL: REALIZADO; NOTA: Son las funciones realizadas en cada empresa que se encuentran dentro de la tabla 
+                a)UL: REALIZADO; NOTA: Son los conocimientos que se encuentran dentro de la tabla 
+        6) Estructura correcta (etiquetas): REALIZADO; NOTA:Se creo ordenamiento con tabulacion para ordenar el codigo y verificar que las etiquetas se encuentren cerradas
+    
+    CONSIDERACIONES QUE SE DEBEN AGREGAR EN EL PROYECTO:
+        1) Al final del documento agrega un link a un archivo llamado portafolio.html:REALIZADO
+        2) Crea el archivo portafolio.html:REALIZADO
+        3) Saca un screenshot de tu página web en el navegador:REALIZADO
+        4) Copia (o mueve) el archivo a la carpeta de imágenes del sitio web:REALIZADO
+        5) Dentro del portafolio, agrega el formato base de html y dentro del body una tabla:REALIZADO
+        6) En la primera fila de la tabla, agrega en una celda el texto "CV", en la segunda celda agrega el screenshot:REALIZADO
+
+    OTRAS OBSERVADAS EN DESCRIPCION DEL DESAFIO:
+        1: Siéntete libre de agregar el contenido que estimes conveniente.: Se busco en internet y se incorporo un poco de CSS, Centrado de imágenes, justificación de texto, etc.
+    
+    PRUEBAS: SE REALIZAN PRUEBAS DE NAVEGACION SOLO CON GOOGLE CHROME
+
+    OBSERVACIÓN: Se detecta parte del código en rojo que al investigar es porque se encuentran obsoletos, por lo cual se procede a realizar cambios (Center dentro de html a Center en CSS) 
+                 proximas clases)
+    
+    CONCLUSION: Se consigue realizar los objetivos planteados utilizando los conocimientos obtenidos en clases. El contenido extra
+                (utilizado por lo dicho en el texto "Siéntete libre de agregar el contenido que estimes conveniente) es logrado con el conocimiento obtenido
+                por medio de documentación, video en YouTube y ayuda del tutor en un problemas con margenes de las listas que se encontraban en las tablas .
+                Probablemente el contenido extra incorporado pueda ser mejorado en futuro con las próximas clases, 
+                pero de igual forma se decide utilizar para practicar sobre este ya que su contenido no está dentro de la pauta de evaluación.
+
+    POBLEMAS Y SOLUCIONES:   
+            PROBLEMA:Se detecta que, al subir y posteriormente bajar el archivo del desafío a la plataforma, este cambia de aspecto. Se informa en clases por lo cual 
+            el tutor indica que probablemente sea un problema en el código que relaciona el CSS con el HTML.  Lo raro que encontré es que se mantenían algunas configuraciones de formato
+            del CSS, y si fueran problema de comunicación entre CSS y HTML deberían ser todas las configuraciones de formatos. 
+            SOLUCIÓN: Se detectaron partes del código en rojo el cual al averiguar esto esas etiquetas o estilos son obsoletas (formato directo desde Html) la cuales son eliminadas 
+            y se agrega el formato deseado desde CSS
+          
+ -->                                              
+
+<!DOCTYPE html>
+<html>
+    <!-- INFORMACION DE CONFIGURACION Y DESCRIPCION DE LA PAGINA PARA EL NAVEGADOR -->
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"
+        href="assets/css/style.css">  
+        <title>CV Juan Gonzalez</title>
+        <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+        <meta name="keywords" content="curriculum, bi, bases de datos, pesca">
+        <meta name="description" content="Curriculum Juan Gonzalez Covarrubias">
+        <meta name="author" content="Juan Gonzalez Covarrubias">
+
+    </head>
+
+    <!-- CONTENIDO PARA EL USUARIO -->  
+    <body>
+
+        <!-- CABECERA DE LA PAGINA --> 
+        <header>
+            <hr>
+            <h6 id="primer_html">MI PRIMER HTML</h6>
+            <div id=datos_ini>
+                <img style="border: 5px solid; color:rgb(9, 9, 108);" src="assets/img/foto_francia_chica.png" alt="Foto Juan González Covarrubias" width="115" height="115" />  
+                <br>
+
+                <a 
+                    href="https://www.linkedin.com/in/juan-gonz%C3%A1lez-1b1910175" target="_blank">
+                    <img style="border: 2px solid; color: rgb(9, 9, 108);" src="assets/img/linkedin.png" alt="Link a perfil de linkedin" width="35" height="35" />   
+                </a>
+
+                <a 
+                    href="https://www.facebook.com/juangonzalezcovarrubias" target="_blank">
+                    <img style="border: 2px solid; color: rgb(9, 9, 108);" src="assets/img/faceb.jpg" alt="Link a perfil de Facebook" width="35" height="35" />   
+                </a>
+
+                <a 
+                    href="https://www.instagram.com/jgonzalezcov/" target="_blank">
+                    <img style="border: 2px solid; color: rgb(9, 9, 108);" src="assets/img/instagram.jpg" alt="Link a perfil de Instagram" width="35" height="35" />   
+                </a>
+
+            </div>
+        </header>
+        
+
+        <!-- CUERPO DE LA PAGINA -->      
+        
+        <style>
+           
+            table, th, td {
+              border: 2px solid  rgb(9, 9, 108);
+            }
+        </style>
+        <main>
+            <hr>
+            
+            <section id="info_personal">
+                <h1>JUAN DAVID GONZÁLEZ COVARRUBIAS</h1>
+
+                        <h2>Data Manager</h2>
+                        <h2>Técnico Electrónico</h2>
+                        <h2>Email: jgonzalezcov@gmail.com</h2>
+  
+            </section>
+
+             <hr>
+            
+             <section id="perfil_section">
+                
+
+                <h2 id="mi_perfil">MI PERFIL</h2>
+                <hr>
+                <div class="perfil_class">
+                    <p>                    
+                    Profesional con experiencia en el área de manejo de información de empresas nacionales del rubro pesquero y salmocultivo. 
+                    Durante mi trayectoria, he colaborado y liderado proyectos de alta complejidad en arquitectura de datos consiguiendo obtener información relevante orientado a maximizar los beneficios que proporciona la digitalización de la información. 
+                    Mediante la proactividad, pensamiento creativo y con orientación al logro de objetivos he conseguido satisfacción con logros alcanzados en el desarrollo de los proyectos en los cuales he participado. Me entusiasman los retos y la 
+                    oportunidad de seguir contribuyendo en empresas que tengan la convicción, que la información debe ser un pilar fundamental en su estrategia de crecimiento y manejo del negocio. 
+                    </p>
+                </div> 
+
+            </section> 
+            
+
+            <section id="info_laboral">
+                <br><br>
+                <hr>
+                    <h2 id="experiencia_pro">EXPERIENCIA PROFECIONAL</h2>  
+                <hr>
+                <div class="laboral_class">
+                    <table width="100%" >
+                        <thead style="height: 100%">
+                            <tr>
+                                <th width="10%" class="th_empresa">EMPRESA</th>
+                                <th width="90%" clase="th_funcion">FUNCION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <div id="independiente_id">
+                                        <img  src="assets/img/independiente.png" alt="Imagen de experiencia profecional como independiente" width="110" height="35" />   
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="desc_funcion">
+                                        <ol>
+                                            <li>Asesoría sobre información pesquera</li>
+                                            <li>Validación de información</li>
+                                            <li>Procesos ETL</li>
+                                            <li>Análisis de la información</li>
+                                            <li>Otros</li>
+                                            
+                                        </ol>
+                                    </div>   
+                                </td>   
+
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div id="cepes_id">
+                                        <a 
+                                            href="http://cepes.cl/marcajebacalao/antecedentes.php" target="_blank">
+                                            <img src="assets/img/cepes.png" alt="Link a empresa CEPES" width="110" height="35" />   
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="desc_funcion">
+                                        <ol>
+                                            <li>Jefe departamento de datos</li>
+                                            <li>Data Manager</li>
+                                            <li>Soporte</li>
+                                            <li>Otros</li>  
+                                        </ol>
+                                    </div>   
+                                </td>   
+                            </tr>
+
+                            <tr>
+                                <td>                           
+                                    <div id="dosa_id">
+                                        <a 
+                                            href="https://interfishmarket.com/en/company.aspx?id=134097" target="_blank">
+                                            <img  src="assets/img/DOSA.jpg" alt="Link a empresa DOSA" width="110" height="35" />  
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="desc_funcion">
+                                        <ol>
+                                            <li>Soporte Informático</li>
+                                            <li>Creacion de bases de datos</li>
+                                            <li>Soporte sistema JD Edwards</li>
+                                            <li>Otros</li>  
+                                        </ol>
+                                    </div>   
+                                </td> 
+                            </tr>
+
+                            <tr>
+                                <td style="height: 100%">
+                                    <div id="emdepes_id">
+                                        <a 
+                                            href="https://www.emdepes.cl" target="_blank">
+                                            <img src="assets/img/logoEmdepesOriginal.jpg" alt="Link a empresa EMDEPES" width="110" height="35" />  
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="desc_funcion">
+                                        <ol>
+                                            <li>Reparación de sistemas informáticos barcos fabricas</li>
+                                            <li>Reparación de sistemas electrónicos barcos fabrica</li>
+                                            <li>Otros</li>  
+                                        </ol>
+                                    </div>   
+                                </td>
+
+                            </tr>
+                            
+
+                            <tr>
+                                <td>  
+                                    <div id="nissui_id">
+                                        <a 
+                                            href="https://www.nissui.co.jp/english/index.html" target="_blank">
+                                            <img src="assets/img/nissui.png" alt="Link a empresa NISSUI" width="110" height="35" />  
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="desc_funcion">
+                                        <ol>
+                                            <li>Encargado de informática</li>
+                                            <li>Soporte de usuarios</li>
+                                            <li>Mantención y reparación de infraestructura</li>
+                                            <li>Reparación de PLC en plantas de alimentos</li>
+                                            <li>Mantención y reparación de infraestructura</li>
+                                            <li>Reparación y mantención de sistemas informáticos de flota de barcos</li>                                           
+                                            <li>Otros</li>                                                                                  
+                                        </ol>
+                                    </div>   
+                                </td>     
+                            </tr>
+
+                            <tr>
+                                <td>  
+                                    <div id="quintec_id">
+                                        <a 
+                                            href="https://www.quintecdistribucion.cl" target="_blank">
+                                            <img src="assets/img/quintec.png" alt="Link a empresa QUINTEC" width="110" height="35" />  
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="desc_funcion">
+                                        <ol>
+                                            <li>Reparación de impresoras</li>
+                                            <li>Reparación de computadores de escritorio</li>
+                                            <li>Reparación de notebook</li>                                        
+                                        </ol>
+                                    </div>   
+                                </td>   
+                            </tr>
+                        </tbody>
+                    </table> 
+                    <hr>                      
+                </div>
+                <br>
+                    <hr>
+                    <h2 id="cono">CONOCIMIENTOS</h2>                
+                    <hr>
+                        <table width="100%" >
+                            <thead style="height: 100%">
+                                <tr>
+                                    <th width="10%" class="th_empresa">ÁREA</th>
+                                    <th width="90%" clase="th_funcion">CONOCIMIENTO</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                                <tr>
+                                    <td>
+                                        <div class="electronica_class">
+                                            <h3 id="electronica">Electrónica</h3>
+                                        </div>
+                                    </td>
+    
+                                    <td>
+                                        <div class="electronica">
+                                            <ul>
+                                                <li>Circuitos digitales</li>
+                                                <li>Circuitos análogos</li>
+                                                <li>Otros</li>                                                
+                                            </ul>
+                                        </div>   
+                                    </td>   
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        <div class="informatica_class">
+                                            <h3 id="informatica">Informática</h3>
+                                        </div>
+                                    </td>
+    
+                                    <td>
+                                        <div class="informatica">
+                                            <ul>
+                                                <li>Windows Server</li>
+                                                <li>Certificacion SQL Server</li>
+                                                <li>Windows</li>
+                                                <li>Office</li>
+                                                <li>Mysql</li>   
+                                                <li>Certificacion Power Bi</li>
+                                                <li>Curso Pentaho</li>
+                                                <li>Curso de Webscraping</li>
+                                                <li>Curso Unity</li>
+                                                <li>Procesos ETL</li>
+                                                <li>Análisis de la información</li>    
+                                                <li>Otros</li>                                       
+                                            
+                                            </ul>
+                                        </div>   
+                                    </td>   
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        <div class="domotica_class">
+                                            <h3 id="domotica">Domótica</h3>
+                                        </div>
+                                    </td>
+    
+                                    <td>
+                                        <div class="domotica">
+                                            <ul>
+                                                <li>Arduino</li>
+                                                <li>Raspberry</li>
+                                            </ul>
+                                        </div>   
+                                    </td>   
+                                </tr> 
+                            </tbody>  
+                        </table>      
+                        <hr>
+                        <br>
+                        <hr>
+                        <div id="portafolio">
+                            <a 
+                                href="https://jgonzalezcov.github.io/portafolio/">
+                                <h3 id="porta">PORTAFOLIO</h3>
+                            </a>
+                        </div>    
+                            <hr>                       
+            </section>
+
+        </main>
+         <!-- PIE DE LA PAGINA -->    
+        <footer>
+
+        </footer>
+    </body>
+</html>
