@@ -1,0 +1,154 @@
+/*EN EL PASO SIGUIENTE SE ELIMINAN ALGUNOS FORMATOS POR DEFECTO DE LOS ELEMENTOS PARA QUE NOSOTROS LE DEMOS LAS PROPIAS*/
+*
+{
+    /* TODOS LOS ELEMENTOS TIPOS DE CAJAS NO SE EXPANDAN DEMASIADO */     
+    box-sizing: border-box;
+    /* ACA SE DAN MARGENES EXTERIORES (TODOS SUS LADOS) QUE EN ESTE CASO ES O */     
+    margin: 0;
+    /*MARGEN INTERNO */ 
+    padding:0;
+}
+/*Aca le damos el formato a la etiqueta seccion*/
+section
+{
+    /*atributo alto de los elementos dentro de section (crea separacion visual)*/
+    height: 80px; /*Aca si colocaramos 100vh cada elemento de la seccion se mostraria en el 100% del largo de la pagina*/
+}
+
+section#info_personal
+{
+    /*atributo alto de los elementos dentro de section (crea separacion visual)*/
+    background-color: rgb(9, 9, 108); /*Aca si colocaramos 100vh cada elemento de la seccion se mostraria en el 100% del largo de la pagina*/
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h2#mi_perfil
+{
+    text-align: center;
+}
+h2#experiencia_pro
+{
+    text-align: center;
+}
+
+h2#cono
+{
+    text-align: center;
+}
+
+h3#informatica
+{
+    text-align: center;
+}
+
+
+h3#electronica
+{
+    text-align: center;
+}
+
+
+h3#domotica
+{
+    text-align: center;
+}
+
+h3#porta
+{
+    text-align: center;
+}
+
+
+
+h1#portafolio
+{
+    text-align: center;
+}
+
+h1#portafolio
+{
+    text-align: center;
+}
+
+h2#cv
+{
+    text-align: center;
+}
+
+
+h6#primer_html
+{
+    /*atributo alto de los elementos dentro de section (crea separacion visual)*/
+    background-color: rgb(117, 117, 123); /*Aca si colocaramos 100vh cada elemento de la seccion se mostraria en el 100% del largo de la pagina*/
+    color: rgb(9, 9, 108);
+    text-align: left;
+}
+
+
+    hr {
+        height: 8px;
+        background-color: rgb(9, 9, 108);
+      }
+
+
+
+
+
+
+
+      div#dosa_id{
+        text-align: center;
+  
+    }
+
+    div#cepes_id{
+        text-align: center;
+
+    }
+    div#independiente_id{
+        text-align: center;
+    }
+    div#nissui_id{
+        text-align: center;
+    }
+      
+    div#emdepes_id{
+        text-align: center;
+    }
+    div#quintec_id{
+        text-align: center;
+    }   
+
+
+
+
+div#datos_ini{
+    text-align: center;
+}
+div#portafolio{
+    text-align: center;
+}          
+ div.perfil_class{ 
+    text-align: justify;
+}
+div.desc_funcion{
+    margin-left: 3%;
+}
+div.electronica{
+    margin-left: 3%;
+}
+div.informatica{
+    margin-left: 3%;
+}
+div.domotica{
+    margin-left: 3%;
+}
+table thead {
+    color: #fff;
+    background-color: rgb(9, 9, 108);
+  }
+  ul.conocimientos {
+    margin-left: 50%;
+    list-style-type: circle;
+  }  
